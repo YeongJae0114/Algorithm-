@@ -2,7 +2,7 @@ def solution(numbers, target):
     answer = 0
     stack_que = [[numbers[0],0], [-1*numbers[0],0]] #
     n = len(numbers)
-
+    print(stack_que)
     while stack_que:
         sum, idx = stack_que.pop()
         idx += 1
