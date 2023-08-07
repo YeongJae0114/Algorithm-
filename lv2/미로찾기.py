@@ -1,0 +1,39 @@
+# N, M을 공백을 기준으로 구분하여 입력 받기
+n, m = map(int, input().split())
+
+# 2차원 리스트의 맵 정보 입력 받기
+graph = []
+for i in range(n):
+    graph.append(list(map(int, input())))
+
+#상하좌우로 이동하는 연산을 위한
+dx = [0, 0, -1, 1]
+dy = [1, -1, 0, 0]
+
+def bfs(x,y):
+    que=[]
+    que.append((x,y))
+    while que:
+        x, y = que.pop()   
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+
+            if nx < 0 or nx >= n or ny <0 or ny >= m:
+                continue
+
+            if graph[nx][ny]==0:
+                continue
+
+            if graph[nx][ny] == 1:
+                graph[nx][ny] =graph[x][y] + 1
+                que.append((nx,ny))
+    return graph[n-1][m-1]   
+
+print(bfs(0,0))         
+
+
+
+            
+    
+
