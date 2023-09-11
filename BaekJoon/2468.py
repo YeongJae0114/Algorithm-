@@ -9,7 +9,7 @@ max_num = 0
 result = 1
 
 dx = [0, 0, -1, 1]
-dy = [1, -1, 0, 0]ㅣㄴ
+dy = [1, -1, 0, 0]
 
 for i in range(n):
     low = list(map(int, input().split()))
