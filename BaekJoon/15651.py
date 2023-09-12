@@ -1,6 +1,6 @@
 import sys
 input = sys.stdin.readline
-a = 1 
+
 def back():
     if len(check) == m:
         #print(' '.join(map(str, check)))
