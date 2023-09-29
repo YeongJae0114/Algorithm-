@@ -54,3 +54,9 @@ FROM ANIMAL_INS
 SELECT * 
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID
+
+-- 12세 이하인 여자 환자 목록 출력하기
+SELECT PT_NAME,	PT_NO,	GEND_CD,AGE,ifnull(TLNO,'NONE') as TLNO
+from PATIENT
+where (AGE<=12) and (GEND_CD='W')
+order by AGE DESC, PT_NAME
