@@ -1,5 +1,7 @@
 from collections import deque
 import copy
+import sys
+input = sys.stdin.readline
 
 n, m = map(int,input().split())
 
@@ -30,6 +32,7 @@ def make_well(cnt):
 def bfs():
     # 벽을 세운 그래프를 깊은 복사를 통해서 만들고 바이러스를 퍼트린다
     test_graph = copy.deepcopy(graph)
+    #test_graph = graph.copy()
     que = deque() 
 
     # 바이러스가 있는 좌표를 queue 에 넣는다
