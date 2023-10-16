@@ -1,0 +1,5 @@
+SELECT count(NAME)
+FROM ANIMAL_INS
+WHERE NAME = (SELECT NAME
+             FROM ANIMAL_INS
+             WHERE NAME = NULL AND NAME = "*Sam" )
