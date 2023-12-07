@@ -1,6 +1,6 @@
 # [level unrated] 부분 문자열인지 확인하기 - 181843 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181843?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181843) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 3일 22:50:41
+2023년 12월 4일 9:33:29
 
 ### 문제 설명
 
