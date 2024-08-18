@@ -46,8 +46,12 @@ public class Main {
                 return o2.kor - o1.kor;
             }
         });
-        for (Student student : line){
-            System.out.println(student.name);
+
+        StringBuilder sb = new StringBuilder();
+        for (Student student : line) {
+            sb.append(student.name).append('\n');
         }
+
+        System.out.println(sb);
     }
 }
