@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 38232 KB, 시간: 516 ms
+메모리: 32304 KB, 시간: 304 ms
 
 ### 분류
 
@@ -12,7 +12,7 @@
 
 ### 제출 일자
 
-2024년 8월 18일 16:02:27
+2024년 8월 23일 14:41:21
 
 ### 문제 설명
 
@@ -22,7 +22,7 @@
 
 <p>예를 들어 <em>N</em>=4이고, 각 위치가 1, 5, 7, 9일 때를 가정하자.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="height: 113px; width: 600px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/4da9d177-d4d8-4cf7-9f91-a75d5a6ec5e6/-/preview/" style="height: 113px; width: 600px;"></p>
 
 <p>이 경우 5의 위치에 설치했을 때, 안테나로부터 모든 집까지의 거리의 총 합이 (4+0+2+4)=10으로, 최소가 된다.</p>
 
