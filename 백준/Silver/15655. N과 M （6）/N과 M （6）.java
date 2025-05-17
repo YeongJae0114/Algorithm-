@@ -33,22 +33,18 @@ class Main{
         br.close();
     }
     
-    static void bt(int depth, int start){
-        if(depth==M){
-            for(int val : arr){
-                sb.append(val).append(' ');
-            }
-            sb.append('\n');
-            return;
+static void bt(int depth, int start){
+    if(depth == M){
+        for(int val : arr){
+            sb.append(val).append(' ');
         }
-        for(int i=start; i<N; i++){
-            if(!visited[i]){
-                visited[i] = true;
-                arr[depth] = map[i];
-                bt(depth+1, i);
-                visited[i] = false;
-            }
-        }
-        
+        sb.append('\n');
+        return;
     }
+
+    for(int i = start; i < N; i++){
+        arr[depth] = map[i];
+        bt(depth + 1, i + 1);  // 중복 없이 다음 값만 탐색
+    }
+}
 }
